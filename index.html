@@ -29,7 +29,8 @@
     <main>
       <section class="kingsofstrength-homepage">
         <div class="videokingsofstrength">
-          <video src="videos/Kingsofstrength.mp4" autoplay loop muted playsinline></video>
+          <video src="videos/Kingsofstrength.mp4" class="background-video" autoplay loop muted playsinline></video>
+
         </div>
          <div class="content">
   
@@ -117,6 +118,11 @@
     <p>Copyright &copy; 2022 Крале на силата. Всички права запазени!</p>
     </div>
    </footer>
+   <script>
+    var bgvideo = document.getElementsByClassName("background-video");
+    bgvideo.muted = true;
+    bgvideo.play();
+    </script>
    <script src="./js/main.js"></script>
 </body>
 </html>
